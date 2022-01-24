@@ -5,12 +5,12 @@ services:
     build: SimpleClient
     image: wwupi/simple-client
     ports:
-      - "8080:8080"
-      - "9990:9990"
+      - "8084:8084"
+      - "9994:9994"
 
   simple-server:
     build: SimpleServer
     image: wwupi/simple-server
     ports:
-      - "8081:8080"
-      - "9991:9990"
+      - "8085:8084"
+      - "9995:9994"
