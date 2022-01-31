@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: saradaprasadjavamspoc 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: saradaprasadjavamspoc
+  template:
+    metadata:
+      labels:
+        app: saradaprasadjavamspoc 
+    spec:
+      containers:
+        - name: saradaprasadjavamspoc 
+          image: saradaacr.azurecr.io/saradaprasadjavamspoc
+          ports:
+          - containerPort: 8084
